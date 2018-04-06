@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/gridLayoutClasico"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:layout_columnSpan="8"
+    android:layout_rowSpan="8"
+    android:columnCount="3"
+    android:paddingBottom="50dp"
+    android:paddingLeft="50dp"
+
+    android:paddingRight="50dp"
+    android:paddingTop="50dp"
+    android:rowCount="3"
+    tools:context="com.example.igreenheart.memorygame.JuegoClasico">
+
+</GridLayout>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">iRemember</string>
+    <string name="juego_clasico">Clasico</string>
+    <string name="juego_avanzado">Avanzado</string>
+    <string name="salir">Salir</string>
+
+
+</resources>
