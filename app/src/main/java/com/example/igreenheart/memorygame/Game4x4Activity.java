@@ -166,14 +166,11 @@ public class Game4x4Activity extends AppCompatActivity implements View.OnClickLi
         switch (item.getItemId()){
             case R.id.item1:
                 Toast.makeText(this, "Home", Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(this, Inicio.class);
+                Intent intent = new Intent(this, MenuActivity.class);
                 this.startActivity(intent);
+                this.finish();
                 return true;
-            case R.id.item2:
-                Toast.makeText(this, "Inicio", Toast.LENGTH_SHORT).show();
-                Intent intent2 = new Intent(this, MenuActivity.class);
-                this.startActivity(intent2);
-                return true;
+
             default:
                 return super.onOptionsItemSelected(item);
         }

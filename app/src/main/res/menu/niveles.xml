@@ -11,9 +11,14 @@
         android:title="@string/juego_avanzado"
         app:showAsAction="never"
         />
+    <item android:id="@+id/infos"
+        android:title="@string/infos"
+        app:showAsAction="never"
+        />
 
     <item android:id="@+id/salir"
         android:title="@string/salir"
         app:showAsAction="never"
         />
+
 </menu>

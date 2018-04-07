@@ -12,6 +12,7 @@
     android:paddingRight="50dp"
     android:paddingTop="50dp"
     android:rowCount="5"
+    android:background="@mipmap/tablero"
     tools:context="com.example.igreenheart.memorygame.Game4x4Activity">
 
 </GridLayout>

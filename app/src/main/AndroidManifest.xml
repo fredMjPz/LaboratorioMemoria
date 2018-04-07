@@ -18,7 +18,8 @@
         </activity>
         <activity android:name=".Game4x4Activity" />
         <activity android:name=".JuegoClasico" />
-        <activity android:name=".Inicio"></activity>
+        <activity
+            android:name=".Inicio" />
     </application>
 
 </manifest>

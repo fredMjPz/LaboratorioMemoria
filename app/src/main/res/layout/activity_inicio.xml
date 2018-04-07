@@ -4,6 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.igreenheart.memorygame.Inicio">
+    tools:context="com.example.igreenheart.memorygame.Inicio"
+
+    android:background="@mipmap/brain">
+
+    <ImageButton
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_weight="1"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/memoria"
+        tools:ignore="MissingConstraints" />
 
 </android.support.constraint.ConstraintLayout>
