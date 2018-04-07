@@ -8,4 +8,10 @@
     android:gravity="center"
     tools:context="com.example.igreenheart.memorygame.MenuActivity">
 
+    <ImageButton
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        app:srcCompat="@mipmap/memoria" />
 </LinearLayout>

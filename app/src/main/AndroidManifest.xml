@@ -17,7 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".Game4x4Activity" />
-        <activity android:name=".JuegoClasico"></activity>
+        <activity android:name=".JuegoClasico" />
+        <activity android:name=".Inicio"></activity>
     </application>
 
 </manifest>

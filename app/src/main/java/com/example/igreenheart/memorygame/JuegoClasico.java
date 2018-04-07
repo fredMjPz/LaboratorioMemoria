@@ -1,8 +1,12 @@
 package com.example.igreenheart.memorygame;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.GridLayout;
 
@@ -13,6 +17,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.GridLayout;
+import android.widget.Toast;
 
 import java.util.Random;
 
@@ -126,6 +131,7 @@ public class JuegoClasico extends AppCompatActivity implements View.OnClickListe
             boton.setEnabled(false);
 
             selectedButton1 = null;
+            Toast.makeText(this, "Muy Bien!", Toast.LENGTH_SHORT).show(); // se modifico esta linea
 
             return;
         }
@@ -150,4 +156,31 @@ public class JuegoClasico extends AppCompatActivity implements View.OnClickListe
         }
 
     }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.acceso,menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.item1:
+                Toast.makeText(this, "Home", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(this, Inicio.class);
+                this.startActivity(intent);
+                return true;
+            case R.id.item2:
+                Toast.makeText(this, "Inicio", Toast.LENGTH_SHORT).show();
+                Intent intent2 = new Intent(this, MenuActivity.class);
+                this.startActivity(intent2);
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+
+    }
+
 }
